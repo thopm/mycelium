@@ -1,6 +1,7 @@
 
 <div align="center">
-<img width="128" height="128" alt="raw" src="https://github.com/user-attachments/assets/37f21ccd-edc5-49f3-8677-dc63655ff19e" />
+
+<img width="128" height="128" alt="raw" src="https://github.com/user-attachments/assets/37f21ccd-edc5-49f3-8677-dc63655ff19e" style="border-radius: 20px; padding: 10px;" />
 
 # Mycelium
 
