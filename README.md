@@ -1,4 +1,5 @@
 <div align="center">
+<img width="1024" height="1024" alt="raw" src="https://github.com/user-attachments/assets/d91079e8-9cb2-48b3-b1c4-2708a46fae07" />
 
 # Mycelium
 
