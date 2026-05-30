@@ -1,6 +1,6 @@
 
 <div align="center">
-<img width="128" height="128" alt="raw" src="https://github.com/user-attachments/assets/3b29bd52-7a82-4de6-9fff-ffa54d90d8d4" />
+<img width="128" height="128" alt="raw" src="https://github.com/user-attachments/assets/37f21ccd-edc5-49f3-8677-dc63655ff19e" />
 
 # Mycelium
 
@@ -26,8 +26,8 @@
 Симметричный алгоритм блочного шифрования. AES-128 никогда не был взломан без знания ключа. AES считается «золотым стандартом» шифрования во всем мире.
 
 ## mycelium respos
-- [mycelium for mobile]()
-- [mycelium for Linux]()
-- [mycelium for Windows]()
+- [mycelium for mobile]() [in progress]
+- [mycelium for Linux]() [in progress]
+- [mycelium for Windows]() [in progress]
 
 ## License
