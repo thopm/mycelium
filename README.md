@@ -7,9 +7,7 @@
 [сайт](https://your-site.com)
 </div>
 
-## Загрузка
-
-Скачайте и установите программу на [сайте](https://your-site.com) с автоматической установкой.
+## О проекте
 
 Я создал оффлайн приложение как вспомогательный инструмент для связи с близкими в трудную минуту. Это не замена привычным мессенджерам. Программа работает на базе почтового сервера, но 
 в целях безопасности, никакие третьи лица не смогут прочитать ваши сообщения.
@@ -25,25 +23,9 @@
 ### [AES (Advanced Encryption Standard)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 Симметричный алгоритм блочного шифрования. AES-128 никогда не был взломан без знания ключа. AES считается «золотым стандартом» шифрования во всем мире.
 
+## mycelium respos
+- [mycelium for mobile]()
+- [mycelium for Linux]()
+- [mycelium for Windows]()
 
-## Требования
-
-- Java 11 или выше
-- JavaFX 11+
-- Maven
-
-
-## Установка и запуск
-
-### С помощью Maven
-
-```bash
-# Клонирование репозитория
-git clone https://github.com/thopm/mycelium.git
-cd mycelium
-
-# Сборка проекта
-mvn clean package
-
-# Запуск приложения
-mvn javafx:run
+## License
