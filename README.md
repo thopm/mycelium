@@ -33,4 +33,12 @@
 
 ## Поддержать автора
 
+<img align="left" width="200" src="https://github.com/user-attachments/assets/cat-image-url.jpg" style="margin-right: 20px; border-radius: 10px;" />
+
+Поддержите развитие проекта! Ваше внимание и помощь очень важны для продолжения работы над Mycelium. 
+
+Если вам нравится проект, поделитесь им со своими друзьями и звёздочкой на GitHub. Это помогает нам продолжать улучшать безопасное общение.
+
+<br clear="left" />
+
 ## License
