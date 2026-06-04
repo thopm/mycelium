@@ -31,4 +31,6 @@
 - [mycelium for Linux]() [in progress]
 - [mycelium for Windows]() [in progress]
 
+## Поддержать автора
+
 ## License
