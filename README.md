@@ -31,7 +31,7 @@
 - [mycelium for Windows]() [in progress]
 
 ## Поддержать автора
-<img align="left" width="128" height="128" alt="raw" src="https://github.com/user-attachments/assets/37f21ccd-edc5-49f3-8677-dc63655ff19e" style="border-radius: 20px; padding: 10px;" />
+<img align="left" width="128" height="128" alt="raw" src="https://github.com/user-attachments/assets/37f21ccd-edc5-49f3-8677-dc63655ff19e" />
 Поддержите развитие проекта! Ваше внимание и помощь очень важны для продолжения работы над Mycelium. 
 
 Если вам нравится проект, поделитесь им со своими друзьями и звёздочкой на GitHub. Это помогает нам продолжать улучшать безопасное общение.
