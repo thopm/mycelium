@@ -33,8 +33,7 @@
 
 ## Поддержать автора
 
-<img align="left" width="200" src="https://github.com/user-attachments/assets/cat-image-url.jpg" style="margin-right: 20px; border-radius: 10px;" />
-<img align="left" width="736" height="690" alt="835e52aab18e96ccd9ae11325ee80ca1" src="https://github.com/user-attachments/assets/2a2b9bcb-f477-4a3d-9757-c54cde30aad8" style="margin-right: 20px; border-radius: 10px;" />
+<img align="left" width="150" height="150" alt="835e52aab18e96ccd9ae11325ee80ca1" src="https://github.com/user-attachments/assets/2a2b9bcb-f477-4a3d-9757-c54cde30aad8" style="margin-right: 20px; border-radius: 10px;" />
 
 Поддержите развитие проекта! Ваше внимание и помощь очень важны для продолжения работы над Mycelium. 
 
