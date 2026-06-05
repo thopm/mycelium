@@ -25,10 +25,9 @@
 ### [AES (Advanced Encryption Standard)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 Симметричный алгоритм блочного шифрования. AES-128 никогда не был взломан без знания ключа. AES считается «золотым стандартом» шифрования во всем мире.
 
-## mycelium respos
+## other mycelium respos
 - [mycelium for mobile]() [in progress]
 - [mycelium for Linux]() [in progress]
-- [mycelium for Windows]() [in progress]
 
 ## Поддержать автора
 Поддержите развитие проекта! Ваше внимание и помощь очень важны для продолжения работы над Mycelium. 
