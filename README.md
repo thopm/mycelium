@@ -25,6 +25,46 @@
 ### • [AES (Advanced Encryption Standard)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 Симметричный алгоритм блочного шифрования. AES-128 никогда не был взломан без знания ключа. AES считается «золотым стандартом» шифрования во всем мире.
 
+### • [BIP39 List](https://cryobackup.com/pages/bip39-list)
+Стандарт генерации мнемонической фразы (seed-фразы) из определенного набора слов. Он используется в качестве криптографического корня (мастер-ключа) для детерминированного и стабильного создания пар ключей, исключая необходимость хранения приватного ключа в открытом виде.
+
+## Схема криптографического рукопожатия (ECDH Handshake)
+
+Процесс инициализации защищенного чата между Алисой (Отправитель) и Бобом (Получатель) без участия сервера.
+
+### Диаграмма взаимодействия
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Alice as Алиса (Отправитель)
+    actor Bob as Боб (Получатель)
+
+    Note over Alice: Из 12 слов BIP-39 генерирует<br/>свою пару: Private_A + Public_A
+    Alice->>Bob: ШАГ 1: Тема "SHH_ECDH_STEP1:[Public_A]"
+    Note over Bob: Сохраняет Public_A в базу
+
+    Note over Bob: Из своих 12 слов BIP-39 генерирует<br/>свою пару: Private_B + Public_B
+    Note over Bob: Вычисляет общий секрет:<br/>ECDH(Private_B, Public_A) -> sharedAESKey
+    Bob->>Alice: ШАГ 2: Тема "SHH_ECDH_STEP2:[Public_B]"
+    Note over Bob: Чат готов (is_pending = 0)
+
+    Note over Alice: Воссоздает Private_A из BIP-39
+    Note over Alice: Вычисляет общий секрет:<br/>ECDH(Private_A, Public_B) -> sharedAESKey
+    Note over Alice: Чат готов (is_pending = 0)
+
+    Note over Alice, Bob: Успех! Оба имеют одинаковый sharedAESKey.<br/>Все следующие сообщения шифруются через AES.
+```
+
+### Пошаговое описание процесса
+
+| Шаг | Участник | Действие | Что передается по сети |
+| :--- | :--- | :--- | :--- |
+| **1** | **Алиса** | Вызывает `proccesFinalSend()`. Извлекает мнемонику из `app_settings`, генерирует пару ключей через `CryptoEngine.generateKeyPairFromMnemonic()`. | Отправляет email с темой `SHH_ECDH_STEP1:Public_Key_Alice` |
+| **2** | **Боб** | Получает письмо. Сохраняет `Public_Key_Alice` в свою базу данных. | *Локальное действие* |
+| **3** | **Боб** | Вызывает `handleAcceptRequest()`. Генерирует свои ключи из своей мнемоники. Вычисляет **sharedAESKey** на основе своего `Private_B` и чужого `Public_A`. | Отправляет email с темой `SHH_ECDH_STEP2:Public_Key_Bob` |
+| **4** | **Алиса** | Получает ответное письмо. Извлекает `Public_Key_Bob`, заново генерирует свой `Private_A` из мнемоники и вычисляет точно такой же **sharedAESKey**. | *Локальное действие* |
+
 ## Скачать mycelium
 - [mycelium for mobile]() [in progress]
 - [mycelium for Linux]() [in progress]
