@@ -17,7 +17,7 @@
 > [!NOTE]
 > В настоящее время Mycelium находится в стадии бета-тестирования, поэтому могут возникнуть непредвиденные проблемы. Пожалуйста, сообщите о них.
 
-## Технологии для безопасности
+## Технологии безопасности
 
 ### • [ECDH (Elliptic Curve Diffie-Hellman)](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman)
 Криптографический протокол обмена ключами, который позволяет двум сторонам, не имеющим общего секрета заранее, безопасно выработать общий сеансовый ключ через незащищённый канал связи.
@@ -25,7 +25,7 @@
 ### • [AES (Advanced Encryption Standard)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 Симметричный алгоритм блочного шифрования. AES-128 никогда не был взломан без знания ключа. AES считается «золотым стандартом» шифрования во всем мире.
 
-## other mycelium respos
+## mycelium на другие устройства
 - [mycelium for mobile]() [in progress]
 - [mycelium for Linux]() [in progress]
 
