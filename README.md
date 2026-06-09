@@ -40,17 +40,15 @@ sequenceDiagram
     actor Bob as Боб (Получатель)
 
     Note over Alice: Из 12 слов BIP-39 генерирует<br/>свою пару: Private_A + Public_A
-    Alice->>Bob: ШАГ 1: Тема "SHH_ECDH_STEP1:[Public_A]"
+    Alice->>Bob: ШАГ 1: Тема "[Public_A]"
     Note over Bob: Сохраняет Public_A в базу
 
     Note over Bob: Из своих 12 слов BIP-39 генерирует<br/>свою пару: Private_B + Public_B
     Note over Bob: Вычисляет общий секрет:<br/>ECDH(Private_B, Public_A) -> sharedAESKey
-    Bob->>Alice: ШАГ 2: Тема "SHH_ECDH_STEP2:[Public_B]"
-    Note over Bob: Чат готов
+    Bob->>Alice: ШАГ 2: Тема "[Public_B]"
 
     Note over Alice: Воссоздает Private_A из BIP-39
     Note over Alice: Вычисляет общий секрет:<br/>ECDH(Private_A, Public_B) -> sharedAESKey
-    Note over Alice: Чат готов
 
     Note over Alice, Bob: Успех! Оба имеют одинаковый sharedAESKey.<br/>Все следующие сообщения шифруются через AES.
 ```
