@@ -52,6 +52,8 @@ sequenceDiagram
 
     Note over Alice, Bob: Успех! Оба имеют одинаковый sharedAESKey.<br/>Все следующие сообщения шифруются через AES.
 ```
+## Установка Windows
+
 
 ## Скачать mycelium
 - [mycelium for mobile]() [in progress]
