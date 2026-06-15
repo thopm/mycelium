@@ -38,14 +38,14 @@ sequenceDiagram
     actor A as Алиса
     actor B as Боб
 
-    Note over A: BIP-39 ➡️ private_A + public_A
+    Note over A: BIP-39 -> private_A + public_A
     A->>B: Шаг 1: Тема "[public_A]"
     Note over B: Сохраняет public_A в БД
-    Note over B: BIP-39 ➡️ private_B + public_B
-    Note over B: ECDH(private_B, public_A) ➡️ SharedKey
+    Note over B: BIP-39 -> private_B + public_B
+    Note over B: ECDH(private_B, public_A) -> SharedKey
     B->>A: Шаг 2: Тема "[public_B]"
     Note over A: Воссоздает private_A
-    Note over A: ECDH(private_A, public_B) ➡️ SharedKey
+    Note over A: ECDH(private_A, public_B) -> SharedKey
     Note over A,B: Успех! SharedKey получен.<br/>Далее коммуникация идет через AES.
 ```
 
