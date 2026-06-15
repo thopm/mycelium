@@ -33,25 +33,21 @@
 
 ### Диаграмма взаимодействия
 
-```mermaid
 sequenceDiagram
     autonumber
-    actor Alice as Алиса (Отправитель)
-    actor Bob as Боб (Получатель)
+    actor A as Алиса
+    actor B as Боб
 
-    Note over Alice: Из 12 слов BIP-39 генерирует<br/>свою пару: Private_A + Public_A
-    Alice->>Bob: ШАГ 1: Тема "[Public_A]"
-    Note over Bob: Сохраняет Public_A в базу
+    Note over A: BIP-39 ➡️ private_A + public_A
+    A->>B: Шаг 1: Тема "[public_A]"
+    Note over B: Сохраняет public_A в БД
+    Note over B: BIP-39 ➡️ private_B + public_B
+    Note over B: ECDH(private_B, public_A) ➡️ SharedKey
+    B->>A: Шаг 2: Тема "[public_B]"
+    Note over A: Воссоздает private_A
+    Note over A: ECDH(private_A, public_B) ➡️ SharedKey
+    Note over A,B: Успех! SharedKey получен.<br/>Далее коммуникация идет через AES.
 
-    Note over Bob: Из своих 12 слов BIP-39 генерирует<br/>свою пару: Private_B + Public_B
-    Note over Bob: Вычисляет общий секрет:<br/>ECDH(Private_B, Public_A) -> sharedAESKey
-    Bob->>Alice: ШАГ 2: Тема "[Public_B]"
-
-    Note over Alice: Воссоздает Private_A из BIP-39
-    Note over Alice: Вычисляет общий секрет:<br/>ECDH(Private_A, Public_B) -> sharedAESKey
-
-    Note over Alice, Bob: Успех! Оба имеют одинаковый sharedAESKey.<br/>Все следующие сообщения шифруются через AES.
-```
 ## Установка Windows
 
 
