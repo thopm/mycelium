@@ -32,7 +32,7 @@
 Процесс инициализации защищенного чата между Алисой (Отправитель) и Бобом (Получатель) без участия сервера.
 
 ### Диаграмма взаимодействия
-
+```mermaid
 sequenceDiagram
     autonumber
     actor A as Алиса
@@ -47,6 +47,7 @@ sequenceDiagram
     Note over A: Воссоздает private_A
     Note over A: ECDH(private_A, public_B) ➡️ SharedKey
     Note over A,B: Успех! SharedKey получен.<br/>Далее коммуникация идет через AES.
+```
 
 ## Установка Windows
 
