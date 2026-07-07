@@ -50,7 +50,7 @@ sequenceDiagram
 ```
 
 ## Установка Windows
-
+[появится в этом репозитории..]
 
 ## Скачать mycelium
 - [mycelium for mobile]() [in progress]
